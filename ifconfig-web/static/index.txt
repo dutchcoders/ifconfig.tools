@@ -1,0 +1,17 @@
+ifconfig-tools: ip tools from the command-line
+===
+made with <3 by DutchCoders 
+
+current ip:
+$ curl http://ifconfig.tools/ip
+{{ .IpAddress }}
+
+current hostname:
+$ curl http://ifconfig.tools/hostname
+{{ .Hostname }}
+
+current useragent:
+$ curl http://ifconfig.tools/useragent
+{{ .UserAgent }}
+
+

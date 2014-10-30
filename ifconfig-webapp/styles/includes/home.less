@@ -1,0 +1,113 @@
+#home {
+    text-align: center;
+    h2 {
+        font-size: 30px;
+    }
+    @media (min-width: @screen-sm-min) {
+        padding: 50px;
+        h2 {
+            font-size: 45px;
+            margin-top: -20px;
+            margin-bottom: 45px;
+        }
+    }
+    .btn-home {
+        margin: 50px 0 25px 0;
+        background-color: #fff;
+    }
+    .btn-home:disabled {
+        border: 2px solid #D5CFCE;
+        color: #D5CFCE;
+    }
+}
+
+
+#web, .terminal {
+    word-wrap: break-word;
+    font-size: 12px;
+    .code-title {
+        color: @red;
+    }
+    padding: 25px 0 0 10px;
+    @media (min-width: @screen-sm-min) {
+        padding: 25px 0 0 20px;
+        font-size: 15px
+    }
+    code {
+        font-family: @font-family-mono;
+    }
+    font-family: @font-family-mono;
+
+    text-align: left;
+    color: #fff;
+    .transition(all @animation-duration ease);
+}
+
+
+#web {
+    margin-top: -2px;
+    padding-top: 0;
+    padding-bottom: 50px;
+    width: 100%;
+    display: block;
+    background: @dark-blue;
+    .transition(all @animation-duration ease);
+    .btn-cta {
+        padding: 5px 10px;
+        font-size: 14px;
+        border-color: #fff;
+    }
+    .queue {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+    a {
+        color: #fff;
+    }
+      .border-bottom-radius (5px);
+
+}
+ .dragged {
+        background: lighten(@dark-blue, 5%)!important;
+}
+
+.terminal {
+     .border-top-radius (0);
+    .border-bottom-radius (5px);
+    background: @dark-blue;
+ //   background: url(../images/terminal.svg);
+    backbground-repeat: no-repeat;
+    background-size: cover;
+}
+
+.terminal-top {
+    .border-top-radius (5px);
+    background: url(../images/terminal-top.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+}
+
+.upload-progress {
+    max-width: 80%;
+    .bar {
+        word-wrap: normal;
+        overflow: hidden;
+    }
+    span {
+        float: right;
+    }
+}
+
+.all-files {
+    display: none;
+}
+
+.all-files .show {
+    display: block;
+}
+
+.form-control.ng-invalid {
+    border: 1px solid #CB0303;
+}
